@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
     <main>
@@ -21,21 +23,31 @@
                 </div>
             </div>
           </div>
-            <div class="column left">
-                <h3>Likes</h3>
-                <ul>
-                    <li>Chicken</li>
-                    <li>Cheese</li>
-                    <li>Sleeping</li>
-                    </ul>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+            <div class="relative p-4 w-full bg-white rounded-lg overflow-hidden shadow hover:shadow-md cursor-pointer">
+              <h3 class="text-base md:text-xl font-medium text-gray-800">
+                Likes
+              </h3>
+          
+              <p class="mt-4 text-base md:text-lg text-gray-600">
+                <li>Chicken</li>
+                <li>Cheese</li>
+                <li>Sleeping</li>
+              </p>
             </div>
-            <div class="column right">
-                <h2>Dislikes</h2>
-                <ul>
-                    <li>Water</li>
-                    <li>Jumpers</li>
-                    <li>Broccoli</li>
-                    </ul>
+          
+            <div class="relative p-4 w-full bg-white rounded-lg overflow-hidden shadow hover:shadow-md cursor-pointer">
+              <h3 class="text-base md:text-xl font-medium text-gray-800">
+               Dislikes
+              </h3>
+          
+              <p class="mt-4 text-base md:text-lg text-gray-600">
+                <li>Water</li>
+                <li>Jumpers</li>
+                <li>Broccoli</li>
+              </p>
+            </div>
+
           <h3>Testimonials</h3>
           <section class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
             <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
